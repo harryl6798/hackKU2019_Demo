@@ -9,12 +9,16 @@ h1 {
 }
 
 img {
+  /* vh stands for "view height" and the number is a percentage. Therefore, this is 80% of the view height */
   height: 80vh;
+
+  /* Sets the width so that the image isn't squished */
   width: auto;
 }
 
 /* Main container for image */
 .container {
+  /* This means that any child elements with position: absolute will be positioned relative to this one */
   position: relative;
 }
 
@@ -22,19 +26,23 @@ img {
 .text {
   color: #f2f2f2;
   position: absolute;
+
+  /* The black outline around the meme text */
   -webkit-text-stroke: 1px black;
+
+  /* Moves the text box to the left and up by 50% of its height. */
   transform: translate(-50%, -50%);
   font-size: 50px;
 }
 
-/* Bottom caption text */
-#center-bottom {
-  top: 87%;
+/* Top caption text */
+#top-text {
+  top: 10%;
   left: 50%;
 }
 
-/* Top caption text */
-#center-top {
-  top: 10%;
+/* Bottom caption text */
+#bottom-text {
+  top: 87%;
   left: 50%;
 }

@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Imports the styles from styles.css -->
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+
+    <!-- Imports the Impact font for the meme text -->
     <link rel="stylesheet" type="text/css" href="https://fathomless-mountain-33480.herokuapp.com/fonts/css/impact" />
+
+    <!-- Executes script.js -->
     <script src="script.js"></script>
   </head>
 <body>
     <h1>Meme Website</h1>
     <div class="container">
+      <!-- This link returns a random meme from our database -->
       <img src="https://fathomless-mountain-33480.herokuapp.com/meme/random">
-      <div class="text" id="center-top"></div>
-      <div class="text" id="center-bottom"></div>
+      <div class="text" id="top-text"></div>
+      <div class="text" id="bottom-text"></div>
     </div>
 
     Top: <input type="text" id=textbox1><br>
     Bottom: <input type="text" id=textbox2><br>
+
+    <!-- The onclick property specifies a function to call when the button is clicked -->
     <button onclick="displayResult()"> Memeify it </button>
     <button onclick="location.reload()"> Randomize me </button>
   </body>
